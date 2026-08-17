@@ -1,1 +1,480 @@
-# RESUME
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Adithya Kumar M | Resume</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f2f2f2;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: white;
+            padding: 45px 55px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.12);
+        }
+
+        /* HEADER */
+        header {
+            text-align: center;
+            border-bottom: 3px solid #b08a3c;
+            padding-bottom: 25px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            letter-spacing: 5px;
+            margin-bottom: 8px;
+        }
+
+        header h1 span {
+            font-weight: 800;
+        }
+
+        .contact {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 15px;
+            font-size: 15px;
+        }
+
+        .contact a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            color: #b08a3c;
+        }
+
+        /* PROFILE */
+        .profile {
+            display: grid;
+            grid-template-columns: 180px 1fr;
+            gap: 35px;
+            align-items: center;
+            padding: 35px 0;
+        }
+
+        .profile-image {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            background: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 55px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .section-title {
+            font-size: 25px;
+            letter-spacing: 3px;
+            border-bottom: 2px solid #b08a3c;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .profile p {
+            color: #555;
+            font-size: 16px;
+        }
+
+        /* EDUCATION */
+        .education {
+            padding: 25px 0;
+        }
+
+        .education-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .education-card {
+            padding: 10px 5px;
+        }
+
+        .education-card h3 {
+            font-size: 17px;
+            margin-bottom: 8px;
+        }
+
+        .education-card p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* EXPERIENCE */
+        .experience {
+            padding: 30px 0;
+        }
+
+        .job {
+            margin-bottom: 25px;
+            padding-left: 20px;
+            border-left: 3px solid #b08a3c;
+        }
+
+        .job h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .job p {
+            color: #555;
+            font-size: 15px;
+        }
+
+        /* SKILLS */
+        .skills {
+            padding: 25px 0;
+        }
+
+        .skill-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px 50px;
+        }
+
+        .skill {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* LANGUAGES */
+        .languages {
+            padding: 25px 0;
+        }
+
+        .language-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .language {
+            background: #f1eadc;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        /* BUTTONS */
+        .buttons {
+            text-align: center;
+            margin-top: 35px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin: 5px;
+            background: #222;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #b08a3c;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 35px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #777;
+            font-size: 14px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 700px) {
+
+            .container {
+                margin: 0;
+                padding: 30px 22px;
+            }
+
+            header h1 {
+                font-size: 30px;
+                letter-spacing: 3px;
+            }
+
+            .profile {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .profile-image {
+                margin: auto;
+            }
+
+            .education-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .skill-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+
+        /* PRINT */
+        @media print {
+            body {
+                background: white;
+            }
+
+            .container {
+                margin: 0;
+                box-shadow: none;
+            }
+
+            .buttons {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <header>
+
+        <h1>ADITHYA <span>KUMAR M</span></h1>
+
+        <div class="contact">
+            <a href="mailto:adithyakumarakm@gmail.com">
+                ✉ adithyakumarakm@gmail.com
+            </a>
+
+            <a href="tel:+916300951748">
+                ☎ +91 6300951748
+            </a>
+
+            <span>📍 Siddipet, Telangana</span>
+        </div>
+
+    </header>
+
+
+    <!-- PROFILE -->
+    <section class="profile">
+
+        <div class="profile-image">
+            AK
+        </div>
+
+        <div>
+            <h2 class="section-title">PROFILE</h2>
+
+            <p>
+                Passionate, enthusiastic and driven student with a good academic
+                record and passion for skills. Possesses excellent research,
+                analytical, and communication skills developed through coursework
+                and extracurricular activities. Proven ability to adapt to new
+                situations and work collaboratively in a team. Eager to apply
+                theoretical knowledge in a practical setting and contribute
+                positively to a given role.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- EDUCATION -->
+    <section class="education">
+
+        <h2 class="section-title">EDUCATION</h2>
+
+        <div class="education-grid">
+
+            <div class="education-card">
+                <h3>Intermediate</h3>
+                <p>
+                    Civics, Economics and Commerce
+                </p>
+                <p>
+                    Telangana Open School Society (TOOS)
+                </p>
+            </div>
+
+            <div class="education-card">
+                <h3>Diploma in Computer Science</h3>
+                <p>
+                    Indur Institute of Engineering and Technology,
+                    Siddipet
+                </p>
+            </div>
+
+            <div class="education-card">
+                <h3>B.Com in Computer Applications</h3>
+                <p>
+                    Prathibha Degree College,
+                    Siddipet
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- WORK EXPERIENCE -->
+    <section class="experience">
+
+        <h2 class="section-title">WORK EXPERIENCE</h2>
+
+        <div class="job">
+
+            <h3>TECHYZ Innovative Trainings Pvt. Ltd.</h3>
+
+            <p>
+                Software Development internship in PHP technology for
+                5 months, from 01-12-2022 to 20-04-2023.
+            </p>
+
+            <p>
+                Developed a School Management Software during the
+                internship period and demonstrated technical skills
+                and ability to meet the expected requirements.
+            </p>
+
+        </div>
+
+
+        <div class="job">
+
+            <h3>MILESTONE — Sangareddy</h3>
+
+            <p>
+                Handled daily billing operations, managed cash and digital
+                transactions accurately, and provided customer service in
+                a high-traffic restaurant environment.
+            </p>
+
+            <p>
+                Maintained records, balanced registers, and supported
+                front-end operations, contributing to smooth workflow
+                and customer satisfaction.
+            </p>
+
+        </div>
+
+
+        <div class="job">
+
+            <h3>MIRTHY CAFE — Jubilee Hills</h3>
+
+            <p>
+                Managed customer billing and payment transactions using
+                Lucid POS software with accuracy and efficiency.
+            </p>
+
+            <p>
+                Generated daily sales reports, reconciled cash, card,
+                and digital payments, and maintained transaction records.
+            </p>
+
+            <p>
+                Provided excellent customer service while supporting
+                smooth front-desk operations in a fast-paced café
+                environment.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+    <section class="skills">
+
+        <h2 class="section-title">SKILLS & ACHIEVEMENTS</h2>
+
+        <div class="skill-grid">
+
+            <div class="skill">✓ Communication</div>
+
+            <div class="skill">✓ Technical Skills</div>
+
+            <div class="skill">✓ HTML, JavaScript & CSS</div>
+
+            <div class="skill">✓ Creativity</div>
+
+            <div class="skill">✓ Lower Typewriting</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- LANGUAGES -->
+    <section class="languages">
+
+        <h2 class="section-title">LANGUAGES</h2>
+
+        <div class="language-list">
+
+            <div class="language">English</div>
+            <div class="language">Telugu</div>
+            <div class="language">Malayalam</div>
+            <div class="language">Hindi</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- BUTTONS -->
+    <div class="buttons">
+
+        <a class="btn"
+           href="mailto:adithyakumarakm@gmail.com">
+            Contact Me
+        </a>
+
+        <a class="btn"
+           href="javascript:window.print()">
+            Download / Print Resume
+        </a>
+
+    </div>
+
+
+    <footer>
+        © 2026 Adithya kumar
+    </footer>
+
+</div>
+
+</body>
+</html>
